@@ -130,7 +130,7 @@ export default function Contact() {
             </div>
 
             {/* Social profiles */}
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+            <div className="contact-social-icons" style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
@@ -287,6 +287,10 @@ export default function Contact() {
             grid-template-columns: 1fr !important;
             gap: 3rem !important;
           }
+          .contact-social-icons {
+            justify-content: center !important;
+            margin-bottom: 1.5rem !important;
+          }
         }
         @media (max-width: 576px) {
           .form-row {
@@ -298,8 +302,24 @@ export default function Contact() {
             padding: 1.25rem !important;
           }
           .contact-info-card {
-            padding: 1rem !important;
-            gap: 0.75rem !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+            padding: 1.5rem 1rem !important;
+            gap: 1rem !important;
+          }
+          .contact-info-card > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+          }
+          .contact-info-card a {
+            text-align: center !important;
+            width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal !important;
           }
         }
         input:focus, textarea:focus {
