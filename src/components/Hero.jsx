@@ -137,7 +137,7 @@ export default function Hero() {
         {/* Social Icons Links */}
         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center' }}>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/maheshvaishnav34"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }}

@@ -18,7 +18,7 @@ export default function Projects() {
       description: 'A full-stack shopping website with product listing, shopping cart system, user login/signup, and order management dashboards.',
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       category: 'fullstack',
-      github: 'https://github.com/yourusername',
+      github: 'https://github.com/maheshvaishnav34',
       demo: '#',
       color: 'linear-gradient(135deg, #ff0844 0%, #ffb199 100%)', // Red/Orange gradient
       icon: <ShoppingBag size={32} style={{ color: '#ffffff' }} />,
@@ -29,7 +29,7 @@ export default function Projects() {
       description: 'A responsive web application where users can create, update status, delete, filter, and organize daily tasks with persistence.',
       tech: ['React.js', 'Node.js', 'MongoDB', 'CSS Grid'],
       category: 'fullstack',
-      github: 'https://github.com/yourusername',
+      github: 'https://github.com/maheshvaishnav34',
       demo: '#',
       color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)', // Blue/Purple gradient
       icon: <CheckSquare size={32} style={{ color: '#ffffff' }} />,
@@ -40,7 +40,7 @@ export default function Projects() {
       description: 'A secure backend user authorization & authentication service featuring bcrypt password hashing, session tokens, and route protection.',
       tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
       category: 'backend',
-      github: 'https://github.com/yourusername',
+      github: 'https://github.com/maheshvaishnav34',
       demo: '#',
       color: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)', // Dark Blue gradient
       icon: <ShieldAlert size={32} style={{ color: '#ffffff' }} />,
@@ -51,7 +51,7 @@ export default function Projects() {
       description: 'A personal responsive developer website to showcase creative skills, professional history, projects, and contact info.',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
       category: 'frontend',
-      github: 'https://github.com/yourusername',
+      github: 'https://github.com/maheshvaishnav34',
       demo: '#',
       color: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Clean light gray/blue gradient
       icon: <FolderGit2 size={32} style={{ color: 'var(--accent)' }} />,

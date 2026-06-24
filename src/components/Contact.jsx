@@ -132,7 +132,7 @@ export default function Contact() {
             {/* Social profiles */}
             <div className="contact-social-icons" style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/maheshvaishnav34"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-panel"
