@@ -20,7 +20,7 @@ export default function Experience() {
   const education = [
     {
       degree: 'Full Stack Web Development Course',
-      institute: 'Your Institute Name',
+      institute: 'StackCode Training Institute ',
       duration: 'Year: 2025 - 2026',
       details: 'Comprehensive developer training covering Frontend layouts, JavaScript states, Node.js REST API servers, user sessions, and database modeling.',
     },
