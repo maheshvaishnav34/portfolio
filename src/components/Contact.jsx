@@ -92,39 +92,39 @@ export default function Contact() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               {/* Email */}
-              <div className="glass-panel" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
+              <div className="glass-panel contact-info-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
                 <div style={{ width: '45px', height: '45px', borderRadius: '12px', background: 'var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
                   <Mail size={20} />
                 </div>
-                <div>
+                <div style={{ minWidth: 0, flex: 1 }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Email Me</div>
-                  <a href="mailto:maheshvaishnav78499@gmail.com" style={{ fontWeight: '600', fontSize: '0.95rem' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
+                  <a href="mailto:maheshvaishnav78499@gmail.com" style={{ fontWeight: '600', fontSize: 'clamp(0.85rem, 3.2vw, 0.95rem)', wordBreak: 'break-all' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
                     maheshvaishnav78499@gmail.com
                   </a>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="glass-panel" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
+              <div className="glass-panel contact-info-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
                 <div style={{ width: '45px', height: '45px', borderRadius: '12px', background: 'var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
                   <Phone size={20} />
                 </div>
                 <div>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Call Me</div>
-                  <a href="tel:+91XXXXXXXXXX" style={{ fontWeight: '600', fontSize: '0.95rem' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
+                  <a href="tel:+91XXXXXXXXXX" style={{ fontWeight: '600', fontSize: 'clamp(0.85rem, 3.2vw, 0.95rem)', wordBreak: 'break-all' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
                     +91 XXXXXXXXXX
                   </a>
                 </div>
               </div>
 
               {/* Location */}
-              <div className="glass-panel" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
+              <div className="glass-panel contact-info-card" style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem', borderRadius: '16px' }}>
                 <div style={{ width: '45px', height: '45px', borderRadius: '12px', background: 'var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
                   <MapPin size={20} />
                 </div>
                 <div>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Location</div>
-                  <div style={{ fontWeight: '600', fontSize: '0.95rem' }}>India</div>
+                  <div style={{ fontWeight: '600', fontSize: 'clamp(0.85rem, 3.2vw, 0.95rem)' }}>India</div>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Contact() {
           </div>
 
           {/* Interactive Form */}
-          <div className="glass-panel" style={{ padding: '2.5rem', borderRadius: '24px' }}>
+          <div className="glass-panel contact-form-container" style={{ padding: '2.5rem', borderRadius: '24px' }}>
             {formStatus === 'success' ? (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem', height: '100%', minHeight: '300px', textAlign: 'center' }}>
                 <CheckCircle size={56} style={{ color: '#10b981' }} />
@@ -291,6 +291,15 @@ export default function Contact() {
         @media (max-width: 576px) {
           .form-row {
             grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .contact-form-container {
+            padding: 1.25rem !important;
+          }
+          .contact-info-card {
+            padding: 1rem !important;
+            gap: 0.75rem !important;
           }
         }
         input:focus, textarea:focus {
