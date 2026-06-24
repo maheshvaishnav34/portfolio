@@ -6,7 +6,7 @@ export default function About() {
   const infoItems = [
     { icon: <Mail size={16} />, label: 'Email', value: 'maheshvaishnav78499@gmail.com', href: 'mailto:maheshvaishnav78499@gmail.com' },
     { icon: <Phone size={16} />, label: 'Phone', value: '+91 XXXXXXXXXX', href: 'tel:+91XXXXXXXXXX' },
-    { icon: <MapPin size={16} />, label: 'Location', value: 'India', href: '#' },
+    { icon: <MapPin size={16} />, label: 'Location', value: 'Ahmedabad, India', href: '#' },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function About() {
             </p>
 
             {/* Quick Details Grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', margin: '1rem 0' }}>
+            <div className="about-info-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', margin: '1rem 0' }}>
               {infoItems.map((item, idx) => (
                 <div
                   key={idx}
@@ -92,19 +92,20 @@ export default function About() {
                     alignItems: 'center',
                     gap: '0.75rem',
                     borderRadius: '12px',
+                    minWidth: 0,
                   }}
                 >
-                  <div style={{ color: 'var(--accent)', display: 'flex', alignItems: 'center' }}>
+                  <div style={{ color: 'var(--accent)', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                     {item.icon}
                   </div>
-                  <div>
+                  <div style={{ minWidth: 0, flex: 1, textAlign: 'left' }}>
                     <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{item.label}</div>
                     {item.href !== '#' ? (
-                      <a href={item.href} style={{ fontWeight: '600', fontSize: '0.95rem' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
+                      <a href={item.href} style={{ fontWeight: '600', fontSize: '0.9rem', overflowWrap: 'break-word', wordBreak: 'break-word', display: 'block' }} onMouseEnter={e => e.target.style.color = 'var(--accent)'} onMouseLeave={e => e.target.style.color = 'inherit'}>
                         {item.value}
                       </a>
                     ) : (
-                      <div style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-primary)' }}>
+                      <div style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-primary)', overflowWrap: 'break-word', wordBreak: 'break-word' }}>
                         {item.value}
                       </div>
                     )}
@@ -138,6 +139,11 @@ export default function About() {
           top: -20px;
           left: 20px;
           opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+          .about-info-grid {
+            grid-template-columns: 1fr !important;
+          }
         }
       `}</style>
     </section>

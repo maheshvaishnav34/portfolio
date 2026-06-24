@@ -124,7 +124,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Location</div>
-                  <div style={{ fontWeight: '600', fontSize: 'clamp(0.85rem, 3.2vw, 0.95rem)' }}>India</div>
+                  <div style={{ fontWeight: '600', fontSize: 'clamp(0.85rem, 3.2vw, 0.95rem)' }}>Ahmedabad, India</div>
                 </div>
               </div>
             </div>

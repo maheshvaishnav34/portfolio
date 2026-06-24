@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
-import logoImg from '../assets/logo.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,8 +22,9 @@ export default function Footer() {
     >
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', textAlign: 'center' }}>
         {/* Logo */}
-        <a href="#home" className="logo-container" aria-label="MV Portfolio Home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          <img src={logoImg} alt="MV Logo" style={{ height: '36px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
+        <a href="#home" className="logo-container" aria-label="MV Portfolio Home">
+          <span className="logo-letter logo-m">M</span>
+          <span className="logo-letter logo-v">V</span>
         </a>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', maxWidth: '400px' }}>
