@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,9 +62,8 @@ export default function Header() {
     >
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Logo */}
-        <a href="#home" className="logo-container" aria-label="MV Portfolio Home">
-          <span className="logo-letter logo-m">M</span>
-          <span className="logo-letter logo-v">V</span>
+        <a href="#home" className="logo-container" aria-label="MV Portfolio Home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img src={logoImg} alt="MV Logo" style={{ height: '36px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} />
         </a>
 
         {/* Desktop Nav */}
