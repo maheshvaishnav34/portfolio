@@ -113,7 +113,7 @@ export default function Hero() {
             lineHeight: 1.7,
           }}
         >
-          Main ek Full Stack Developer hoon jo modern, responsive aur scalable web applications banata hoon. Mujhe frontend aur backend dono side par kaam karna pasand hai, jahan main clean UI, secure APIs aur efficient database design par focus karta hoon.
+          I am a passionate Full Stack Developer focused on building modern, responsive, and scalable web applications. I enjoy working on both frontend and backend development, focusing on clean user interfaces, secure APIs, and efficient database design.
         </p>
 
         {/* Call to Actions */}
