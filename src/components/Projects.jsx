@@ -52,7 +52,7 @@ export default function Projects() {
       tech: ['React.js', 'Vite', 'Vanilla CSS', 'Lucide Icons'],
       category: 'frontend',
       github: 'https://github.com/maheshvaishnav34/portfolio',
-      demo: 'https://maheshvaishnav34.github.io/portfolio/',
+      demo: '#',
       color: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Clean light gray/blue gradient
       icon: <FolderGit2 size={32} style={{ color: 'var(--accent)' }} />,
     },
