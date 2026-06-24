@@ -47,12 +47,12 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'A personal responsive developer website to showcase creative skills, professional history, projects, and contact info.',
-      tech: ['HTML5', 'CSS3', 'JavaScript'],
+      title: 'Animated Developer Portfolio',
+      description: 'A premium, fully responsive developer portfolio featuring a custom fluid gradient logo, dark/light theme toggling, clean entry animations, and mobile-optimized layouts.',
+      tech: ['React.js', 'Vite', 'Vanilla CSS', 'Lucide Icons'],
       category: 'frontend',
-      github: 'https://github.com/maheshvaishnav34',
-      demo: '#',
+      github: 'https://github.com/maheshvaishnav34/portfolio',
+      demo: 'https://github.com/maheshvaishnav34/portfolio',
       color: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', // Clean light gray/blue gradient
       icon: <FolderGit2 size={32} style={{ color: 'var(--accent)' }} />,
     },
@@ -211,6 +211,8 @@ export default function Projects() {
                   </a>
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
