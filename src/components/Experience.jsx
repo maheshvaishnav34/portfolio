@@ -12,7 +12,7 @@ export default function Experience() {
     {
       role: 'Frontend Developer (Self-Taught)',
       company: 'Open Source & Projects',
-      duration: '2025 - 202',
+      duration: '2024 - 2025',
       details: 'Designed and deployed responsive static and dynamic web pages using HTML5, CSS3, JavaScript, and Tailwind CSS. Focused on creating user-friendly layouts and micro-interactions.',
     },
   ];
