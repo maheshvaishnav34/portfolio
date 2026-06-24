@@ -6,13 +6,13 @@ export default function Experience() {
     {
       role: 'Full Stack Developer',
       company: 'Personal / Practice Projects',
-      duration: '2024 - Present',
+      duration: '2025 - Present',
       details: 'Built full-stack e-commerce applications, custom task management boards, and secure authentication systems. Experienced in integrating REST APIs, implementing database schemas using MongoDB and MySQL, and managing application code flow using Git.',
     },
     {
       role: 'Frontend Developer (Self-Taught)',
       company: 'Open Source & Projects',
-      duration: '2023 - 2024',
+      duration: '2025 - 202',
       details: 'Designed and deployed responsive static and dynamic web pages using HTML5, CSS3, JavaScript, and Tailwind CSS. Focused on creating user-friendly layouts and micro-interactions.',
     },
   ];
@@ -21,14 +21,14 @@ export default function Experience() {
     {
       degree: 'Full Stack Web Development Course',
       institute: 'Your Institute Name',
-      duration: 'Year: 2023 - 2024',
+      duration: 'Year: 2025 - 2026',
       details: 'Comprehensive developer training covering Frontend layouts, JavaScript states, Node.js REST API servers, user sessions, and database modeling.',
     },
     {
-      degree: 'Your Bachelor Degree / Diploma',
-      institute: 'Your College / University Name',
-      duration: 'Year: 2020 - 2023',
-      details: 'Learned fundamental computer science topics including structured databases, web technologies, operating systems, and object-oriented programming.',
+      degree: 'Bachelor of Computer Applications',
+      institute: 'CLG Institute of Engineering & Technology',
+      duration: 'Year: 2022 - 2025',
+      details: 'Studied core computer application subjects including programming, database management, web development, operating systems, and object-oriented programming, with practical exposure to software development and problem-solving.'
     },
   ];
 
