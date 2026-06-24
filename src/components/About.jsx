@@ -114,7 +114,7 @@ export default function About() {
             </div>
 
             {/* Action buttons */}
-            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '0.5rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '0.5rem', flexWrap: 'wrap' }}>
               <a href="#contact" className="btn btn-primary">
                 Hire Me Now
               </a>

@@ -293,3 +293,114 @@ textarea {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* Animated Logo Styles */
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+  gap: 1px;
+}
+
+.logo-letter {
+  display: inline-block;
+  background: var(--accent-gradient);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logo-gradient-flow 4s ease infinite;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+}
+
+.logo-m {
+  animation: logo-gradient-flow 4s ease infinite, slide-in-m 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.logo-v {
+  animation: logo-gradient-flow 4s ease infinite, slide-in-v 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+/* Hover effects */
+.logo-container:hover .logo-letter {
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+.logo-container:hover .logo-m {
+  transform: translate3d(-2px, -2px, 0) scale(1.05);
+}
+
+.logo-container:hover .logo-v {
+  transform: translate3d(2px, 2px, 0) scale(1.05);
+}
+
+/* Animations */
+@keyframes logo-gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slide-in-m {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slide-in-v {
+  0% {
+    opacity: 0;
+    transform: translateX(15px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Global Responsiveness Overrides */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* About Section Responsiveness */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+    text-align: center;
+  }
+  .about-grid > div {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image-wrapper {
+    width: 260px !important;
+    height: 260px !important;
+  }
+  .glow-border {
+    width: 260px !important;
+    height: 260px !important;
+    top: -10px !important;
+    left: 10px !important;
+  }
+}

@@ -61,8 +61,9 @@ export default function Header() {
     >
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Logo */}
-        <a href="#home" style={{ fontSize: '1.5rem', fontWeight: '800', fontFamily: 'var(--font-heading)', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '-0.03em' }}>
-          MK.DEV
+        <a href="#home" className="logo-container" aria-label="MV Portfolio Home">
+          <span className="logo-letter logo-m">M</span>
+          <span className="logo-letter logo-v">V</span>
         </a>
 
         {/* Desktop Nav */}
